@@ -11,7 +11,7 @@ hoverZoomPlugins.push({
         if (!self.redgifsToken) {
             $.get(`${apiUrl}/auth/temporary`, function(data) {
                 if (data && data.token) {
-                    self.redgifsToken = data.token;
+                    self.redgifsToken = data.token; 
                 }
             });
         }
